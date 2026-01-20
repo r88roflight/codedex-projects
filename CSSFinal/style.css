@@ -1,0 +1,508 @@
+/*
+======
+Global 
+======
+*/
+
+* {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+article, figure, .navi {
+    border: solid 1.5px green;
+}
+
+body {
+    background-color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+h5 {
+    font-size: 11px;
+}
+
+p {
+    font-size: 9px;
+}
+
+a {
+    font-size: 10px;
+}
+
+/* 
+======
+Header 
+======
+*/
+
+header {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: left;
+}
+
+nav {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.navi {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a {
+    border-top-right-radius: 10px;
+}
+
+/* 
+============
+Hero Section 
+============
+*/
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    scroll-margin-top: 70px;
+}
+
+.square, .column{
+    flex: 1;
+    min-width: 250px;
+}
+
+.square {
+    flex: 2;
+    aspect-ratio: 1/1;
+    display: flex;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.square div{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%; 
+}
+
+.hero-layers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.title {
+    position: relative;
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+
+.column article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* 
+=============
+Cards Section 
+=============
+*/
+
+#cards {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#cards article {
+    flex: 1;
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.cards-image {
+    flex: 1;
+    display: flex;
+    aspect-ratio: 1/1;
+    align-items: center;
+    padding: 10px;
+}
+
+.cards-image > div {
+    flex: 1;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cards-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* 
+===============
+Movie Sections 
+===============
+*/
+
+#matrix, #reloaded, #revolutions, #resurrections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    scroll-margin-top: 70px;
+}
+
+/* 
+=====
+Media
+=====
+*/
+
+#media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    scroll-margin-top: 70px;
+}
+
+.media-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.media-card {
+    flex: 1; 
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-top-right-radius: 10px;
+}
+
+.media-card > article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+}
+
+.media-image {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    margin: 0;
+    border-top-right-radius: 10px;
+}
+
+.media-image div {
+    flex: 1;
+    aspect-ratio: 2/3;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* 
+=====
+About
+=====
+*/
+
+#has-you, #neo {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#abt{
+    border: none;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#about > article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.about-flex {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+}
+
+.about-flex, #forms {
+    padding: 10px;
+}
+
+#forms {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    min-width: 400px;
+}
+
+#forms > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+    margin: 10px;
+}
+
+.wide-input {
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+
+#buddy {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    width: 100%;
+}
+
+#buddy-stretch {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10;
+}
+
+#buddy-stretch input {
+    width: 100%;
+    flex: 1;
+    min-height: 40px;
+}
+
+#check {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+}
+
+.checkbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+#sidecar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.rider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.rider label {
+    flex: 1;
+}
+
+.rider input {
+    flex: 2;
+}
+
+#search {
+    width: 100%;
+    color: black;
+}
+
+.black {
+    color: black;
+}
+
+#submit {
+    color: black;
+}
+
+/* 
+======
+Footer 
+======
+*/
+
+footer { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+footer article {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer hr{
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+#foot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#foot article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.source pre {
+    padding: 10px;
+    margin: 0;
+    border-top: solid 1.5px green;
+    overflow-x: auto;
+}
+
+.source code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    color: green;
+}
+
+.view-code {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8px;
+}
