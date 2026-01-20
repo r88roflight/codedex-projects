@@ -466,9 +466,8 @@ footer hr{
 #foot {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 5px;
 }
 
